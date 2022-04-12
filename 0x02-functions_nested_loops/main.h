@@ -1,11 +1,6 @@
-/**
- * putchar - a function to print using putchar
- *
- *
- **/
-int _putchar (int ch)
-{
-	putchar(ch);
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
 
-	return (0);
-}
+int _putchar(char c);
+
+#endif
