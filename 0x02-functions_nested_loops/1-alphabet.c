@@ -1,18 +1,17 @@
 #include "main.h"
 /**
- * main - prints alphabets
+ * print_alphabet- prints alphabets
  *
  * Return: to match function return type
  **/
-int main(void)
+void print_alphabet(void)
 {
-	int alpha;
+	char alpha = 'a';
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	while (alpha <= 'z')
 	{
 		_putchar(alpha);
+		alpha++;
 	}
 	_putchar('\n');
-
-	return (0);
 }
