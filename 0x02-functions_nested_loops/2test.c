@@ -12,18 +12,16 @@ int _abs(int n)
 {
 	if (n > 0)
 	{
-		putchar(n);
-		return (1);
+		return (n);
 	}
 	else if (n < 0)
 	{
-		putchar(n);
-		return (1);
+		n *= -1;
+		return (n);
 	}
 	else
 	{
-		putchar(n);
-		return (0);
+		return (n);
 
 	}
 }
