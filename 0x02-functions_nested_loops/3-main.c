@@ -1,19 +1,9 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
+ * main - check code
  *
- *
- *
- *
+ * Return: always 0
  **/
-int _islower(int c)
-{
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	else
-		return (0);
-}
-
 int main(void)
 {
 	int r;
@@ -25,5 +15,4 @@ int main(void)
 	putchar(r + '0');
 	putchar ('\n');
 	return (0);
-
 }
