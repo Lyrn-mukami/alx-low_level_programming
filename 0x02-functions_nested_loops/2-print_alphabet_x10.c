@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_alphabet_x10 - prints alphabets
  *
@@ -7,18 +7,18 @@
 void print_alphabet_x10(void)
 {
 	int i = 1;
-	
-	while (i <= 3)
+
+	while (i <= 10)
 	{
 
 		char alpha = 'a';
-		
+
 		while (alpha <= 'z')
 		{
-			putchar(alpha);
+			_putchar(alpha);
 			alpha++;
 		}
-	putchar('\n');
-	i++
+	_putchar('\n');
+	i++;
 	}
 }
