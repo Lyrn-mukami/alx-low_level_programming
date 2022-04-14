@@ -11,13 +11,13 @@ int main (void)
 	int b;
 	int c;
 
-	for(a = '0'; a<= '2'; a++)
+	for(a = '0'; a<= '7'; a++)
 	{
-		for(b = '0'; b<= '2'; b++)
+		for(b = '0'; b<= '8'; b++)
 		{
-			for(c = '0'; c<= '2'; c++)
+			for(c = '0'; c<= '9'; c++)
 			{
-				if (a != b && a != c && b != c)
+				if ((a != b && a != c && b != c) && (c > b && b > a))
 				{
 					putchar(a);
 					putchar(b);
