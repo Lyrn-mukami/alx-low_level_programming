@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * times_table - used to print the last digit of a number
@@ -7,7 +7,7 @@
  * Description:print the product of numbers)?
  * Return: Always 0
  **/
-int times_table(void)
+void times_table(void)
 {
 	int num1;
 	int num2;
@@ -24,30 +24,28 @@ int times_table(void)
 			result = 1;
 
 			result = num1 * num2;
-			
-			if (result > 9)
+			if (num2 == 0)
 			{
-				putchar((result/10) + '0');
-				putchar(result%10 + '0');
+				_putchar(result + '0');
+			}
+			else if (result > 9)
+			{
+				_putchar((result / 10) + '0');
+				_putchar(result % 10 + '0');
 			}
 			else
 			{
-				putchar(' ');
-				putchar(result + '0');
+				_putchar(' ');
+				_putchar(result + '0');
 			}
-			if (num2 < 9 )	
-				putchar(',');
-				putchar(' ');
+			if (num2 < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			num2++;
 		}
-		putchar ('\n');
+		_putchar ('\n');
 		num1++;
 	}
-	return(0);
-}
-
-int main(void)
-{
-	times_table();
-	return (0);
 }
