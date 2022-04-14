@@ -1,8 +1,7 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * jack_bauer - used to print the last digit of a number
- *@n:value to be checked
 (*
  * Description:print the numbers from n to 98)?
  * Return: Always 0
@@ -14,6 +13,7 @@ void jack_bauer(void)
 	int m1;
 	int m2;
 	int limit = 9;
+
 	h1 = 0;
 	while (h1 <= 2)
 	{
@@ -30,12 +30,12 @@ void jack_bauer(void)
 				m2 = 0;
 				while (m2 <= 9)
 				{
-					putchar(h1 + '0');
-					putchar(h2 + '0');
-					putchar(':');
-					putchar(m1 + '0');
-					putchar(m2 + '0');
-					putchar('\n');
+					_putchar(h1 + '0');
+					_putchar(h2 + '0');
+					_putchar(':');
+					_putchar(m1 + '0');
+					_putchar(m2 + '0');
+					_putchar('\n');
 					m2++;
 				}
 				m1++;
@@ -44,9 +44,4 @@ void jack_bauer(void)
 		}
 		h1++;
 	}
-}
-int main(void)
-{
-	jack_bauer();
-	return (0);
 }
