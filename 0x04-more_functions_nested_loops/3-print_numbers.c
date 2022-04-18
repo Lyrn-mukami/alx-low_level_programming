@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * print_numbers - used to print the numbers 0 - 9
+ * print_numbers - used to print the ibers 0 - 9
  * @void: no input variable
  * 
  * Return: non expected
  **/
 void print_numbers(void)
 {
-	int num;
+	int i;
 
-	for (num = 0; num <= 9; num ++)
+	for (i = 0; i <= 9; i ++)
 	{
-		_putchar(num, '0');
+		_putchar(i, '0');
 	}
 	_putchar('\n');
 }
