@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * print_numbers - used to print the ibers 0 - 9
- * @void: no input variable
+ * print_numbers - prints the numbers 0 - 9
  * 
- * Return: non expected
- **/
+ */
 void print_numbers(void)
 {
 	int i;
