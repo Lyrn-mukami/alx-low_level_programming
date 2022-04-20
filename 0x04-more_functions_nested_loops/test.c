@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <limits.h>
 #include "main.h"
 /**
@@ -19,7 +20,7 @@ void print_number(int n)
 	if (res < 0)
 	{
 		res *= -1;
-		_putchar('-');
+		putchar('-');
 	}
 
 /**/
@@ -36,8 +37,23 @@ void print_number(int n)
 /*Main */
 	while (expo > 1)
 	{
-		_putchar((res / expo) % 10 + '0');
+		putchar((res / expo) % 10 + '0');
 		expo /= 10;
 	}
-	_putchar(res % 10 + '0');
+	putchar(res % 10 + '0');
+}
+
+int main(void)
+{
+    print_number(98);
+    putchar('\n');
+    print_number(402);
+    putchar('\n');
+    print_number(1024);
+    putchar('\n');
+    print_number(-98);
+    putchar('\n');
+    print_number(INT_MIN);
+    putchar('\n');
+    return (0);
 }
