@@ -12,7 +12,8 @@ void rev_string(char *s)
 	int i;
 	int end;
 	int j;
-	char arr[30];
+	char arr[1000];
+
 	while (*s != '\0')
 	{
 		count++;
@@ -20,26 +21,16 @@ void rev_string(char *s)
 	}
 	end = count - 1;
 
-	for (i = 0; i<= end;)
+	for (i = 0; i <= end;)
 	{
-			s--;
-			arr[i] = *s;	
-			i++;
+		s--;
+		arr[i] = *s;
+		i++;
 	}
-	
+
 	for (j = 0; j <= end;)
 	{
 		s[j] = arr[j];
 		j++;
-	}	
-}
-
-int main(void)
-{
-	    char s[10] = "My School";
-
-	        printf("%s\n", s);
-		    rev_string(s);
-		        printf("%s\n", s);
-			    return (0);
+	}
 }
