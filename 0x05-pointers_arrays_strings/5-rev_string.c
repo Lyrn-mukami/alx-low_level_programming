@@ -26,6 +26,7 @@ void rev_string(char *s)
 		s--;
 		arr[i] = *s;
 		i++;
+
 	}
 
 	for (j = 0; j <= end;)

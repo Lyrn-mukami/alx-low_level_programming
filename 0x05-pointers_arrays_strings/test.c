@@ -1,45 +1,36 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * rev_string - used to print a string in reverse
- * @s: pointer to point to string memory
+ * puts2 - used to print digits at multiple of 2 positions
+ * @str: pointer used
  *
- * Return: length of string
+ * Return: non expected
  */
-void rev_string(char *s)
+void puts2(char *str)
 {
 	int count = 0;
 	int i;
-	int end;
-	int j;
-	char arr[30];
-	while (*s != '\0')
+	while (*str != '\0')
 	{
 		count++;
-		s++;
+		str++;
 	}
-	end = count - 1;
+	printf("total is %d", count);
+	for (i = 0; i <= count; i ++)
+	{
+		if (*str % 2 == 0)
+		{
+			putchar(*str);
+			str++;
+		}
+	}
 
-	for (i = 0; i<= end;)
-	{
-			s--;
-			arr[i] = *s;	
-			i++;
-	}
-	
-	for (j = 0; j <= end;)
-	{
-		s[j] = arr[j];
-		j++;
-	}	
 }
 
 int main(void)
 {
-	    char s[10] = "My School";
-
-	        printf("%s\n", s);
-		    rev_string(s);
-		        printf("%s\n", s);
-			    return (0);
+	    char *str;
+		str = "0123456789";
+		    puts2(str);
+		        return (0);
 }

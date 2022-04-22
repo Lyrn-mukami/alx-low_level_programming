@@ -20,6 +20,8 @@ void print_rev(char *s)
 	end = count - 1;
 
 	for (i = end; i >= 0; i--)
+
+
 	{
 		s--;
 		_putchar(*s);
